@@ -1,0 +1,161 @@
+/* news page css */
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+
+  margin: 0;
+}
+
+.content {
+  padding-top: 7%;
+  background-color: #b0b8b1;
+  display: flex;
+}
+
+h2,
+.Course em {
+
+  font-family: 'Pacifico', cursive;
+}
+
+.coupon {
+  border: 1px outset #718277;
+  max-width: 300px;
+}
+
+.containerOffers {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.containerNews {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+
+.containerCourse {
+  position: absolute;
+  bottom: 80px;
+  right: 25px;
+  height: 180px;
+}
+
+.containerVeteran {
+  position: absolute;
+  bottom: 80px;
+  left: 305px;
+  height: 68px;
+  border-style: inset;
+}
+
+.imgJan {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.newsTransform {
+  border-radius: 5px;
+  height: auto;
+  margin: 10px auto;
+  padding: 6px;
+  width: auto;
+  border: 1px groove;
+}
+
+/* media query for ipad*/
+@media screen and (min-width: 415px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .content {
+    display: grid;
+    padding-top: 11%;
+  }
+
+  .containerNews {
+    padding: 0;
+  }
+
+  .coupon {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .containerCourse {
+    position: initial;
+    clear: both;
+    right: 25px;
+    height: 265px;
+    bottom: 0;
+    left: 2%;
+  }
+
+  .containerVeteran {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* media query for mobile*/
+@media screen and (max-width: 415px) {
+  .content {
+    display: grid;
+    width: 100%;
+    padding-top: 20%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .coupon {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .containerCourse {
+    position: initial;
+    clear: both;
+    right: 25px;
+    height: 240px;
+    bottom: 0;
+    left: 2%;
+  }
+
+  .containerVeteran {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* media query for windows*/
+@media screen and (min-width: 1025px) {
+  .containerVeteran {
+    bottom: 20%;
+  }
+
+  .containerCourse {
+    bottom: 22%;
+    right: 12px;
+    height: 124px;
+    width: 28%;
+    text-align: center;
+  }
+}

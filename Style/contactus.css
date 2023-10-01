@@ -1,0 +1,219 @@
+/* css for contact us page */
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #355835;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 2%;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f4821;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #b0b8b1;
+}
+
+.contactForm {
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+}
+
+.frmContact {
+  width: 50%;
+  margin: auto;
+  border-style: groove;
+  padding: 15px;
+}
+
+.containerAddress {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+th {
+  text-align: center;
+}
+
+h1,
+h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+.tblHours {
+  width: 70%;
+  border-style: outset;
+  margin: auto;
+  text-align: center;
+}
+
+.details {
+  border-style: outset;
+  margin: auto;
+  text-align: center;
+}
+
+.maps {
+  padding-top: 8px;
+}
+
+/* media query for ipad */
+@media screen and (min-width: 540px) and (max-width: 850px) {
+
+  .content {
+    display: grid;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    display: grid;
+  }
+
+  .contactForm {
+    padding-top: 20px;
+    width: 90%;
+  }
+
+  .busHours {
+    padding-top: 0;
+  }
+
+  iframe {
+    width: 710px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+/* media query for mobile */
+@media screen and (min-width: 400px) and (max-width: 540px) {
+  .content {
+    display: grid;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    display: grid;
+  }
+
+  .contactForm {
+    padding-top: 20px;
+    width: 70%;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+
+  .hours {
+    width: 100%;
+  }
+
+  .containerAddress {
+    padding: 0px;
+  }
+
+  .divConnect {
+    width: 100%;
+  }
+
+  .frmContact {
+    width: 68%;
+  }
+
+  .busHours {
+    padding-top: 0;
+  }
+
+  iframe {
+    width: 380px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+/* media query for mobile */
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    display: grid;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+
+  .hours {
+    width: 100%;
+  }
+
+  .containerAddress {
+    padding: 0px;
+  }
+
+  .divConnect {
+    width: 100%;
+  }
+
+  .frmContact {
+    width: 68%;
+  }
+
+  .busHours {
+    padding-top: 0;
+  }
+
+  iframe {
+    width: 348px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
